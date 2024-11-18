@@ -17,7 +17,13 @@ packages:
   wpmServer: https://packages.webmethods.io
   wpmRegistry: softwareag
 services:
-- serviceName: project.se_ts_integrationdemo.integrations:getVendor
+- serviceName: project.se_ts_integrationdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:SE_TS_EdgeDB
+  packages:
+  - name: SE_TS_IntegrationDemoProject
+    version: "1.0"
+  - name: MMXDemoPackage
+    version: "1.0"
+- serviceName: project.se_ts_integrationdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:SE_TS_Edge_Mysql_DB
   packages:
   - name: SE_TS_IntegrationDemoProject
     version: "1.0"
@@ -29,19 +35,79 @@ services:
     version: "1.0"
   - name: MMXDemoPackage
     version: "1.0"
+- serviceName: project.se_ts_integrationdemo.integrations:getVendor
+  packages:
+  - name: SE_TS_IntegrationDemoProject
+    version: "1.0"
+  - name: MMXDemoPackage
+    version: "1.0"
 configurationVariables:
-  ? artConnection.SE_TS_IntegrationDemoProject.project.se_ts_integrationdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_TS_EdgeDB.connectionSettings.driverType
-  : MySQLJDBC
   ? artConnection.SE_TS_IntegrationDemoProject.project.se_ts_integrationdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_TS_EdgeDB.connectionManagerSettings.blockingTimeout
   : "1000"
   ? artConnection.SE_TS_IntegrationDemoProject.project.se_ts_integrationdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_TS_EdgeDB.connectionSettings.trustStore
   : ""
-  ? artConnection.SE_TS_IntegrationDemoProject.project.se_ts_integrationdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_TS_EdgeDB.connectionManagerSettings.expireTimeout
-  : "1000"
-  ? artConnection.SE_TS_IntegrationDemoProject.project.se_ts_integrationdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_TS_EdgeDB.connectionManagerSettings.minimumPoolSize
+  ? artConnection.SE_TS_IntegrationDemoProject.project.se_ts_integrationdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_TS_Edge_Mysql_DB.connectionManagerSettings.startupBackoffSecs
+  : "10"
+  ? artConnection.SE_TS_IntegrationDemoProject.project.se_ts_integrationdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_TS_Edge_Mysql_DB.connectionSettings.password
+  : "{AES}AsegY28Coi/S17V4BYq2Cw=="
+  ? artConnection.SE_TS_IntegrationDemoProject.project.se_ts_integrationdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_TS_Edge_Mysql_DB.connectionSettings.transactionType
+  : NO_TRANSACTION
+  ? artConnection.SE_TS_IntegrationDemoProject.project.se_ts_integrationdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_TS_Edge_Mysql_DB.connectionSettings.user
+  : crunchops
+  ? artConnection.SE_TS_IntegrationDemoProject.project.se_ts_integrationdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_TS_Edge_Mysql_DB.connectionManagerSettings.poolIncrementSize
   : "1"
   ? artConnection.SE_TS_IntegrationDemoProject.project.se_ts_integrationdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_TS_EdgeDB.connectionSettings.keyStore
   : ""
+  ? artConnection.SE_TS_IntegrationDemoProject.project.se_ts_integrationdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_TS_Edge_Mysql_DB.connectionSettings.networkProtocol
+  : ""
+  ? artConnection.SE_TS_IntegrationDemoProject.project.se_ts_integrationdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_TS_EdgeDB.connectionSettings.transactionType
+  : NO_TRANSACTION
+  ? artConnection.SE_TS_IntegrationDemoProject.project.se_ts_integrationdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_TS_Edge_Mysql_DB.connectionManagerSettings.minimumPoolSize
+  : "1"
+  ? artConnection.SE_TS_IntegrationDemoProject.project.se_ts_integrationdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_TS_Edge_Mysql_DB.connectionSettings.portNumber
+  : "3306"
+  ? artConnection.SE_TS_IntegrationDemoProject.project.se_ts_integrationdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_TS_EdgeDB.connectionManagerSettings.poolable
+  : "false"
+  ? artConnection.SE_TS_IntegrationDemoProject.project.se_ts_integrationdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_TS_EdgeDB.connectionSettings.user
+  : crunchops
+  ? artConnection.SE_TS_IntegrationDemoProject.project.se_ts_integrationdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_TS_Edge_Mysql_DB.connectionSettings.trustStore
+  : ""
+  ? artConnection.SE_TS_IntegrationDemoProject.project.se_ts_integrationdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_TS_Edge_Mysql_DB.connectionSettings.dbType
+  : MySQL
+  ? artConnection.SE_TS_IntegrationDemoProject.project.se_ts_integrationdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_TS_Edge_Mysql_DB.connectionManagerSettings.maximumPoolSize
+  : "10"
+  ? artConnection.SE_TS_IntegrationDemoProject.project.se_ts_integrationdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_TS_EdgeDB.connectionSettings.portNumber
+  : "3306"
+  ? artConnection.SE_TS_IntegrationDemoProject.project.se_ts_integrationdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_TS_EdgeDB.connectionManagerSettings.startupBackoffSecs
+  : "10"
+  ? artConnection.SE_TS_IntegrationDemoProject.project.se_ts_integrationdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_TS_Edge_Mysql_DB.connectionManagerSettings.heartBeatInterval
+  : "0"
+  ? artConnection.SE_TS_IntegrationDemoProject.project.se_ts_integrationdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_TS_EdgeDB.connectionSettings.password
+  : "{AES}AsegY28Coi/S17V4BYq2Cw=="
+  ? artConnection.SE_TS_IntegrationDemoProject.project.se_ts_integrationdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_TS_Edge_Mysql_DB.connectionEnabled
+  : "false"
+  ? artConnection.SE_TS_IntegrationDemoProject.project.se_ts_integrationdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_TS_EdgeDB.connectionSettings.driverType
+  : MySQLJDBC
+  ? artConnection.SE_TS_IntegrationDemoProject.project.se_ts_integrationdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_TS_Edge_Mysql_DB.connectionSettings.serverName
+  : mysql-service.mysql
+  ? artConnection.SE_TS_IntegrationDemoProject.project.se_ts_integrationdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_TS_EdgeDB.connectionManagerSettings.expireTimeout
+  : "1000"
+  ? artConnection.SE_TS_IntegrationDemoProject.project.se_ts_integrationdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_TS_Edge_Mysql_DB.connectionSettings.keyStore
+  : ""
+  ? artConnection.SE_TS_IntegrationDemoProject.project.se_ts_integrationdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_TS_Edge_Mysql_DB.connectionSettings.driverType
+  : MySQLJDBC
+  ? artConnection.SE_TS_IntegrationDemoProject.project.se_ts_integrationdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_TS_EdgeDB.connectionManagerSettings.minimumPoolSize
+  : "1"
+  ? artConnection.SE_TS_IntegrationDemoProject.project.se_ts_integrationdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_TS_Edge_Mysql_DB.connectionManagerSettings.expireTimeout
+  : "1000"
+  ? artConnection.SE_TS_IntegrationDemoProject.project.se_ts_integrationdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_TS_Edge_Mysql_DB.connectionManagerSettings.blockingTimeout
+  : "1000"
+  ? artConnection.SE_TS_IntegrationDemoProject.project.se_ts_integrationdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_TS_Edge_Mysql_DB.connectionSettings.databaseName
+  : demodb
+  ? artConnection.SE_TS_IntegrationDemoProject.project.se_ts_integrationdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_TS_Edge_Mysql_DB.connectionSettings.datasourceClass
+  : com.mysql.cj.jdbc.MysqlDataSource
+  ? artConnection.SE_TS_IntegrationDemoProject.project.se_ts_integrationdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_TS_Edge_Mysql_DB.connectionManagerSettings.poolable
+  : "false"
   ? artConnection.SE_TS_IntegrationDemoProject.project.se_ts_integrationdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_TS_EdgeDB.connectionSettings.serverName
   : mysql-cred.mysql
   ? artConnection.SE_TS_IntegrationDemoProject.project.se_ts_integrationdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_TS_EdgeDB.connectionManagerSettings.startupRetryCount
@@ -50,29 +116,21 @@ configurationVariables:
   : "0"
   ? artConnection.SE_TS_IntegrationDemoProject.project.se_ts_integrationdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_TS_EdgeDB.connectionSettings.otherProperties
   : loginTimeout=60;
-  ? artConnection.SE_TS_IntegrationDemoProject.project.se_ts_integrationdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_TS_EdgeDB.connectionSettings.transactionType
-  : NO_TRANSACTION
   ? artConnection.SE_TS_IntegrationDemoProject.project.se_ts_integrationdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_TS_EdgeDB.connectionManagerSettings.maximumPoolSize
   : "10"
-  ? artConnection.SE_TS_IntegrationDemoProject.project.se_ts_integrationdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_TS_EdgeDB.connectionManagerSettings.poolable
-  : "false"
   ? artConnection.SE_TS_IntegrationDemoProject.project.se_ts_integrationdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_TS_EdgeDB.connectionManagerSettings.poolIncrementSize
   : "1"
   ? artConnection.SE_TS_IntegrationDemoProject.project.se_ts_integrationdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_TS_EdgeDB.connectionSettings.datasourceClass
   : com.mysql.cj.jdbc.MysqlDataSource
   ? artConnection.SE_TS_IntegrationDemoProject.project.se_ts_integrationdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_TS_EdgeDB.connectionSettings.dbType
   : MySQL
-  ? artConnection.SE_TS_IntegrationDemoProject.project.se_ts_integrationdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_TS_EdgeDB.connectionSettings.user
-  : crunchops
   ? artConnection.SE_TS_IntegrationDemoProject.project.se_ts_integrationdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_TS_EdgeDB.connectionSettings.networkProtocol
   : ""
+  ? artConnection.SE_TS_IntegrationDemoProject.project.se_ts_integrationdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_TS_Edge_Mysql_DB.connectionSettings.otherProperties
+  : loginTimeout=60;
+  ? artConnection.SE_TS_IntegrationDemoProject.project.se_ts_integrationdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_TS_Edge_Mysql_DB.connectionManagerSettings.startupRetryCount
+  : "0"
   ? artConnection.SE_TS_IntegrationDemoProject.project.se_ts_integrationdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_TS_EdgeDB.connectionSettings.databaseName
   : demodb
-  ? artConnection.SE_TS_IntegrationDemoProject.project.se_ts_integrationdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_TS_EdgeDB.connectionSettings.portNumber
-  : "3306"
-  ? artConnection.SE_TS_IntegrationDemoProject.project.se_ts_integrationdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_TS_EdgeDB.connectionManagerSettings.startupBackoffSecs
-  : "10"
-  ? artConnection.SE_TS_IntegrationDemoProject.project.se_ts_integrationdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_TS_EdgeDB.connectionSettings.password
-  : "{AES}AsegY28Coi/S17V4BYq2Cw=="
   ? artConnection.SE_TS_IntegrationDemoProject.project.se_ts_integrationdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_TS_EdgeDB.connectionEnabled
   : "false"
