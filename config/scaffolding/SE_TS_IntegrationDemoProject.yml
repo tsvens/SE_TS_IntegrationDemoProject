@@ -1,0 +1,9 @@
+version: "1.0"
+info:
+  model: int-scaffold
+packages:
+- name: SE_TS_IntegrationDemoProject
+  gitServerName: SE_TS_Github
+  gitUrl: https://github.com/tsvens
+  gitUsername: tsvens
+  gitBranch: main
