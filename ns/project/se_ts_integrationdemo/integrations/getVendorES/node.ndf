@@ -245,7 +245,7 @@
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
     <value name="lastModifiedBy">tomas.svensson@ibm.com</value>
-    <value name="lastModifiedDate">1731936301788</value>
+    <value name="lastModifiedDate">1731936374987</value>
     <value name="displayName">getVendorES</value>
     <value name="description"></value>
     <array name="appList" type="record" depth="1">
@@ -307,6 +307,7 @@
         </array>
         <number name="ui_step_index" type="Long">1</number>
         <null name="outputMapSet"/>
+        <Boolean name="xmlMapsetSupported">true</Boolean>
       </record>
     </record>
   </record>
