@@ -7,3 +7,8 @@ packages:
   gitUrl: https://github.com/tsvens
   gitUsername: tsvens
   gitBranch: main
+- name: MMXDemoPackage
+  gitServerName: SE_TS_Github
+  gitUrl: https://github.com/tsvens
+  gitUsername: tsvens
+  gitBranch: master
