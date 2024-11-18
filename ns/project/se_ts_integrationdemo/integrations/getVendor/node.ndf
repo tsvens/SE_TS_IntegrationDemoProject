@@ -247,9 +247,8 @@
   <value name="retry_max">0</value>
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
-    <value name="createdBy">tomas.svensson@ibm.com</value>
-    <value name="createdDate">1731934812826</value>
-    <value name="lastModifiedDate">1731934812826</value>
+    <value name="lastModifiedBy">tomas.svensson@ibm.com</value>
+    <value name="lastModifiedDate">1731934929813</value>
     <value name="displayName">getVendor</value>
     <value name="description"></value>
     <array name="appList" type="record" depth="1">
