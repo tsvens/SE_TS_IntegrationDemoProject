@@ -248,7 +248,7 @@
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
     <value name="lastModifiedBy">tomas.svensson@ibm.com</value>
-    <value name="lastModifiedDate">1731935718026</value>
+    <value name="lastModifiedDate">1731935725493</value>
     <value name="displayName">getVendor</value>
     <value name="description"></value>
     <array name="appList" type="record" depth="1">
@@ -284,11 +284,11 @@
         <value name="version">1.0</value>
         <number name="index" type="Long">0</number>
         <record name="connection" javaclass="com.wm.util.Values">
-          <value name="connectionName">SE_TS_EdgeDB</value>
+          <value name="connectionName">SE_TS_Edge_Mysql_DB</value>
           <value name="connectionType">webMethods Adapter for JDBC ExtendedConnection</value>
           <null name="description"/>
         </record>
-        <value name="connectionNSName">project.se_ts_integrationdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:SE_TS_EdgeDB</value>
+        <value name="connectionNSName">project.se_ts_integrationdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:SE_TS_Edge_Mysql_DB</value>
         <value name="connectionType">webMethods Adapter for JDBC ExtendedConnection</value>
         <Boolean name="accountReferenceResolved">true</Boolean>
         <Boolean name="serviceReferenceResolved">true</Boolean>

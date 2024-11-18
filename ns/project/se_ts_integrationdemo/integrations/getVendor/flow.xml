@@ -81,7 +81,7 @@
   <DATA ENCODING="XMLValues" I18N="true">
 
 <Values version="2.0">
-  <value name="xml">project.se_ts_integrationdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:SE_TS_EdgeDB</value>
+  <value name="xml">project.se_ts_integrationdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:SE_TS_Edge_Mysql_DB</value>
 </Values>
 </DATA>
 </MAPSET>
