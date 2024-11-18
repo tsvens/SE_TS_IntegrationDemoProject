@@ -17,7 +17,13 @@ packages:
   wpmServer: https://packages.webmethods.io
   wpmRegistry: softwareag
 services:
-- serviceName: project.se_ts_integrationdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:SE_TS_EdgeDB
+- serviceName: project.se_ts_integrationdemo.integrations:getVendor
+  packages:
+  - name: SE_TS_IntegrationDemoProject
+    version: "1.0"
+  - name: MMXDemoPackage
+    version: "1.0"
+- serviceName: project.se_ts_integrationdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:getVentorES
   packages:
   - name: SE_TS_IntegrationDemoProject
     version: "1.0"
