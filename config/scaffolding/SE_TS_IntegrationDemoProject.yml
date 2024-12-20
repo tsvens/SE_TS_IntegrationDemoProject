@@ -35,10 +35,10 @@ services:
   - name: MMXDemoPackage
     version: "1.0"
 configurationVariables:
-  ? artConnection.SE_TS_IntegrationDemoProject.project.se_ts_integrationdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_TS_EdgeDB.connectionSettings.driverType
-  : MySQLJDBC
   ? artConnection.SE_TS_IntegrationDemoProject.project.se_ts_integrationdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_TS_EdgeDB.connectionManagerSettings.blockingTimeout
   : "1000"
+  ? artConnection.SE_TS_IntegrationDemoProject.project.se_ts_integrationdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_TS_EdgeDB.connectionSettings.driverType
+  : MySQLJDBC
   ? artConnection.SE_TS_IntegrationDemoProject.project.se_ts_integrationdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_TS_EdgeDB.connectionSettings.otherProperties
   : loginTimeout=60;
   ? artConnection.SE_TS_IntegrationDemoProject.project.se_ts_integrationdemo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.SE_TS_EdgeDB.connectionSettings.transactionType
